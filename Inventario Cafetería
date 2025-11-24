@@ -4,10 +4,12 @@ Num_dispositivos = int(input("¿Cuántos dispositivos regsitrará?"))
 
 
 def menu():
-     print("1. ")
-     print("2. ")
-     print("3. ")
-     print("4. Salir")
+     print("\n-----MENÚ PRINCIPAL-------")
+     print("1. Registrar productos del menú ")
+     print("2. Mostrar inventario actual")
+     print("3. Registrar ventas y actualizar inventario")
+     print("4. Guardar reporte final del archivo")
+     print("5. Salir")
 
 
 def opcion1(Productos):
