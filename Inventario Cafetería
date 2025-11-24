@@ -1,0 +1,43 @@
+print("   Calculadora de consumo energético y costos   ")
+Productos = []
+Num_dispositivos = int(input("¿Cuántos dispositivos regsitrará?"))
+
+
+def menu():
+     print("1. ")
+     print("2. ")
+     print("3. ")
+     print("4. Salir")
+
+
+def opcion1(Productos):
+
+def consumo_mensual(Productos):
+
+
+def opcion2(Productos):
+
+
+def opcion3(Productos):
+
+
+def opcion4():
+
+
+
+for i in range():
+
+
+while True:
+     menu()
+     Opcion =(input("Selecciona una opción: "))
+     if Opcion == "1":
+          opcion1()
+     elif Opcion == "2":
+          opcion2()
+     elif Opcion == "3":
+          opcion3()
+     elif Opcion == "4":
+          opcion4()
+     else:
+          print("Opción no válida")
