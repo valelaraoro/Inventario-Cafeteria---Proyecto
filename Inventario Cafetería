@@ -1,4 +1,4 @@
-print("   Calculadora de consumo energético y costos   ")
+print(" ----------MENÚ CAFETERÍA---------- ")
 Productos = []
 Num_dispositivos = int(input("¿Cuántos dispositivos regsitrará?"))
 
