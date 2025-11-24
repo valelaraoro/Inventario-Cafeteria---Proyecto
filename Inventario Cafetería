@@ -1,15 +1,21 @@
 print(" ----------MENÚ CAFETERÍA---------- ")
 Productos = []
-Num_dispositivos = int(input("¿Cuántos dispositivos regsitrará?"))
+
+while True:
+     try:
+          Num_productos = int(input("Cuantós productos se registrarán?"))
+          break
+     except:
+          print("Ingresa un número válido")
 
 
 def menu():
-     print("\n-----MENÚ PRINCIPAL-------")
-     print("1. Registrar productos del menú ")
-     print("2. Mostrar inventario actual")
-     print("3. Registrar ventas y actualizar inventario")
-     print("4. Guardar reporte final del archivo")
-     print("5. Salir")
+    print("       MENÚ PRINCIPAL      ")
+    print("1. Registrar productos ")
+    print("2. Mostrar inventario ")
+    print("3. Realizar ventas")
+    print("4. Reporte Final")
+    print("5. Salir")
 
 
 def opcion1(Productos):
