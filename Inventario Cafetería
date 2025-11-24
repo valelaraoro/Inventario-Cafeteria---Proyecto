@@ -1,17 +1,5 @@
 print(" ----------MENÚ CAFETERÍA---------- ")
 Productos = []
-<<<<<<< HEAD
-while True:
- try:
-   Num_productos = int(input("¿Cuántos productos del menú registrará?"))
-
-   break
- except:
-     print("Ingresa un número válido")
-
-
-
-=======
 
 while True:
      try:
@@ -19,7 +7,6 @@ while True:
           break
      except:
           print("Ingresa un número válido")
->>>>>>> ec29e362efb474248ea33e9fcdecc41bc408f52c
 
 
 def menu():
