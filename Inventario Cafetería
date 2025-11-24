@@ -12,8 +12,6 @@ def menu():
 
 def opcion1(Productos):
 
-def consumo_mensual(Productos):
-
 
 def opcion2(Productos):
 
