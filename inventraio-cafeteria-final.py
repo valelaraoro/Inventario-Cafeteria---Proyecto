@@ -61,18 +61,17 @@ def opcion1(Productos):
 # ---------------------------
 #   OPCIÓN 2: Mostrar inventario
 # ---------------------------
-def opcion2():
-    if len(Productos) == 0:
-        print("No hay productos registrados.")
-        return
+Productos = ["Burrito de asado", "Burrito de chicharron", "Chilaquiles", "Pan dulce", "Santa clara chocolate"]
 
-    print("\n--- MENÚ DE PRODUCTOS ---")
+def opcion2():
+    print("MENÚ DE PRODUCTOS")
+    
     contador = 1
     for producto in Productos:
-        print(f"{contador}. {producto['Nombre']}")
+        print(f"{contador}. {producto}")
         contador += 1
-    print("-------------------------\n")
 
+    print("-------------------------\n")
 
 # ---------------------------
 #   OPCIÓN 3: Registrar ventas
