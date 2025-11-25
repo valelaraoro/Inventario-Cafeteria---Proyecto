@@ -66,7 +66,20 @@ def mostrar_inventario(Productos):
 
 
 
-def opcion2(Productos):
+# Lista de productos
+Productos = ["Burrito de asado", "Burrito de chicharron", "Chilaquiles", "Pan dulce", "Santa clara chocolate"]
+
+def opcion2():
+    print("MENÚ DE PRODUCTOS")
+    
+    contador = 1
+    for producto in Productos:
+        print(f"{contador}. {producto}")
+        contador += 1
+
+    print("-------------------------\n")
+
+
 
 
 def opcion3(Productos):
