@@ -117,8 +117,20 @@ while True:
 print("Ventas registradas con éxito")
 
 
+def opcion4(Productos):
+    if len(Productos) == 0:
+        print("No hay datos para guardar")
+        return 
+    resultados = calcular_consumo(Productos)   
+    
+    try:
+        with open("reporte_cafeteria.txt","w") as archivo:
+        archivo.write("----Reporte de Cafetería----\n\n")
 
-def opcion4():
+        for r in resultados:
+            archivo.write(f"{r['nombre']}- Vendido:{r['vendido']} unidades - Ingresos: ${r['Ingresos']}\n")
+
+
 
 
 
@@ -136,5 +148,7 @@ while True:
           opcion3()
      elif Opcion == "4":
           opcion4()
+    
+    
      else:
           print("Opción no válida")
