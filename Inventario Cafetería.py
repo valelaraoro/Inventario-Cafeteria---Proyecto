@@ -15,8 +15,9 @@ def menu():
     print("1. Registrar productos ")
     print("2. Mostrar inventario ")
     print("3. Realizar ventas")
-    print("4. Reporte Final")
-    print("5. Salir")
+    print("4. Producto mas vendido ")
+    print("5. Reporte Final")
+    print("6. Salir")
 
 
 
@@ -92,7 +93,7 @@ def calcular_consumo(Productos):
         return Resultados
 
 
-def opcion_3(Productos):
+def opcion3(Productos):
     if len(Productos) == 0:
         print("Registre productos")
         return
@@ -111,10 +112,24 @@ while True:
     except:
         print("Ingresa un número válido")
 
-["Vendido"] = Vendido
-["Cantidad"] -= Vendido
 
 print("Ventas registradas con éxito")
+
+def producto_con_mayor_inventario(Productos):
+    if len(Productos) == 0:
+        print("No hay productos registrados.")
+        return
+
+    mayor = Productos[0]
+
+    for p in Productos:
+        if p["cantidad"] > mayor["cantidad"]:
+            mayor = p
+
+    print("\n--- Producto con mayor inventario ---")
+    print(f"Nombre: {mayor['nombre']}")
+    print(f"Cantidad: {mayor['cantidad']}")
+    print(f"Precio: {mayor['precio']}")
 
 
 def opcion4(Productos):
@@ -125,10 +140,13 @@ def opcion4(Productos):
     
     try:
         with open("reporte_cafeteria.txt","w") as archivo:
-        archivo.write("----Reporte de Cafetería----\n\n")
-
+         archivo.write("----Reporte de Cafetería----\n\n")
+               
+        
         for r in resultados:
             archivo.write(f"{r['nombre']}- Vendido:{r['vendido']} unidades - Ingresos: ${r['Ingresos']}\n")
+    except: 
+        print("error")
 
 
 
@@ -137,7 +155,7 @@ def opcion4(Productos):
 for i in range():
 
 
-while True:
+ while True:
      menu()
      Opcion =(input("Selecciona una opción: "))
      if Opcion == "1":
@@ -147,6 +165,8 @@ while True:
      elif Opcion == "3":
           opcion3()
      elif Opcion == "4":
+         opcion4()
+     elif Opcion == "5":
           opcion4()
     
     
