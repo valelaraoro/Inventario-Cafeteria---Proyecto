@@ -1,7 +1,7 @@
 print(" ----------MENÚ CAFETERÍA---------- ")
 Productos = []
 
-# Pedir cuántos productos se registrarán
+
 while True:
     try:
         Num_productos = int(input("¿Cuántos productos se registrarán? "))
@@ -19,9 +19,6 @@ def menu():
     print("5. Salir")
 
 
-# ---------------------------
-#   OPCIÓN 1: Registrar productos
-# ---------------------------
 def opcion1(Productos):
     print("\n----- Registro de productos -----")
 
@@ -58,25 +55,28 @@ def opcion1(Productos):
     print("\nRegistro completado correctamente.")
 
 
-# ---------------------------
-#   OPCIÓN 2: Mostrar inventario
-# ---------------------------
+<<<<<<< HEAD
 def opcion2():
     if len(Productos) == 0:
         print("No hay productos registrados.")
         return
+=======
+# ---------------------------
+#   OPCIÓN 2: Mostrar inventario
+# ---------------------------
+Productos = ["Burrito de asado", "Burrito de chicharron", "Chilaquiles", "Pan dulce", "Santa clara chocolate"]
+>>>>>>> b5abef1d94c198ab8b1aa0e38f501dd973cf59b9
 
-    print("\n--- MENÚ DE PRODUCTOS ---")
+def opcion2():
+    print("MENÚ DE PRODUCTOS")
+    
     contador = 1
     for producto in Productos:
-        print(f"{contador}. {producto['Nombre']}")
+        print(f"{contador}. {producto}")
         contador += 1
+
     print("-------------------------\n")
 
-
-# ---------------------------
-#   OPCIÓN 3: Registrar ventas
-# ---------------------------
 def opcion3(Productos):
     if len(Productos) == 0:
         print("No hay productos registrados.")
@@ -115,11 +115,9 @@ def opcion3(Productos):
     print("Venta registrada con éxito.")
 
 
-# ---------------------------
-#   Cálculo de ingresos
-# ---------------------------
+
 def calcular_consumo(Productos):
-    Resultados = []
+    Resultados = [] 
 
     for p in Productos:
         ingresos = p["Vendido"] * p["Precio"]
@@ -133,9 +131,6 @@ def calcular_consumo(Productos):
     return Resultados
 
 
-# ---------------------------
-#   OPCIÓN 4: Reporte final
-# ---------------------------
 def opcion4(Productos):
     if len(Productos) == 0:
         print("No hay datos para guardar.")
@@ -157,9 +152,6 @@ def opcion4(Productos):
         print("Error al guardar el archivo.")
 
 
-# ---------------------------
-#   BUCLE PRINCIPAL
-# ---------------------------
 while True:
     menu()
     Opcion = input("Selecciona una opción: ")
