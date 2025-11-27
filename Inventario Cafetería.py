@@ -1,13 +1,11 @@
 print(" ----------MENÚ CAFETERÍA---------- ")
-Productos = []
 
-
-while True:
-     try:
-          Num_productos = int(input("Cuantós productos se registrarán?"))
-          break
-     except:
-          print("Ingresa un número válido")
+Productos = [{"nombre": "Chilaquiles", "Precio": 25, "Cantidad": 20},
+    {"nombre": "Molletes", "Precio": 65, "Cantidad": 15},
+    {"nombre": "Pan dulce", "Precio": 15, "Cantidad": 30},
+    {"nombre": "Vaso de fruta", "Precio": 40, "Cantidad": 30},
+    {"nombre": "Elote en vaso", "Precio": 35, "Cantidad": 15},
+    {"nombre": "Nachos con queso", "Precio": 45, "Cantidad": 20}]
 
 
 def menu():
@@ -18,6 +16,20 @@ def menu():
     print("4. Producto mas vendido ")
     print("5. Reporte Final")
     print("6. Salir")
+
+def registrar_productos():
+    print("\n--- Registro de productos ---")
+    while True:
+        try:
+            n = int(input("¿Cuántos productos deseas registrar?"))
+            break
+        except:
+          print("Ingresa un número válido")
+
+for i in range(n)
+    print(f"\")
+
+
 
 
 
