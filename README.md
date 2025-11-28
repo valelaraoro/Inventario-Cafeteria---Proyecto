@@ -9,3 +9,4 @@ Junior: Oralia Martínez / Sebastián Carreón
 # instalacion y ejecucion
 instalacion: como instalar en un computador o dispositivo compatible y definir como funciona 
 ejecucion:
+
