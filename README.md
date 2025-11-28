@@ -6,8 +6,9 @@ Se busca desarrollar un programa digital que automatice la gestión del menú e 
 Senior: Valentina Lara
 Mid: Ventura Orozco / Abel Peña
 Junior: Oralia Martínez / Sebastián Carreón
-# instalacion y ejecucion
-instalacion: 
+# instalación y ejecución
+ejecucion: Consiste en un sistema que lleva el inventario de una cafetería, en este caso la de la universidad.
+instalación: 
 el programa requeria de un programa: windows a partir de la version 8, linux o mac el cual se podra descargar y ejecutar adecaudamente, de igual manera requerira de una plataforma que este conjunta al Tecmilenio y sus variantes.
-ejecucion:
+
 
