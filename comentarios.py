@@ -105,6 +105,8 @@ def registrar_venta():
     print(f"\nVenta registrada: {cantidad} unidades de {producto['nombre']}")
 
 # Producto más vendido:
+# gracias a la funcion de registro de ventas podemos especificar que producto fue el mas vendido para darle mas espacio en inventario o poder deifnirlo como "especialidad de la casa" 
+
 def producto_mas_vendido():
     if len(Productos) == 0:
         print("\nNo hay productos registrados.")
@@ -120,6 +122,8 @@ def producto_mas_vendido():
         print(f"Ingresos: {mas_vendido['vendido'] * mas_vendido['precio']}")
 
 # Reporte final:
+# se registra ventas y producto mas vendido junto con los productos que sobraron en el inventario para lograr una mejor organizacion y revision de los productos
+
 def reporte_final():
     if len(Productos) == 0:
         print("\nNo hay productos registrados. No se puede generar reporte final")
