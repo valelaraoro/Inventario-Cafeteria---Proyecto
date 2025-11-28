@@ -7,6 +7,6 @@ Senior: Valentina Lara
 Mid: Ventura Orozco / Abel Peña
 Junior: Oralia Martínez / Sebastián Carreón
 # instalacion y ejecucion
-instalacion: como instalar en un computador o dispositivo compatible y definir como funciona 
-ejecucion:
+instalacion: Como instalar en un computador o dispositivo compatible y definir como funciona. 
+ejecucion: Consiste en un sistema que lleva el inventario de una cafetería, en este caso la de la universidad.
 
