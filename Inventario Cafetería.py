@@ -28,7 +28,7 @@ def registrar_productos():
 
 for i in range(n)
     print(f"\")
-
+#HOla
 
 
 
