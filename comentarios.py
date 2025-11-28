@@ -56,7 +56,8 @@ def registrar_productos():
 
     print("\nRegistro completado.")
 
-# Mostrar inventario
+# Mostrar inventario:
+# en la segunda opcion se define el inventario completo incluyendo los alimentos junto con su precio y cantidad que fueron agregados en la opcion de registrar productos
 def mostrar_inventario():
     if len(Productos) == 0:
         print("\nNo hay productos registrados")
@@ -66,7 +67,8 @@ def mostrar_inventario():
     for i, p in enumerate(Productos, start=1):
         print(f"{i}. {p['nombre']} | Precio: {p['precio']} | Cantidad: {p['cantidad']} | Vendido: {p['vendido']}")
 
-# Registrar venta
+# Registrar venta:
+# en el registro de ventas se agrega la cantidad vendida de cualquiera de los alimentos de uno por uno para obtener un registro de inventario final del día y de lo sobrante en caso de que sobre
 def registrar_venta():
     if len(Productos) == 0:
         print("\nNo hay productos registrados.")
@@ -102,7 +104,7 @@ def registrar_venta():
     producto["vendido"] += cantidad
     print(f"\nVenta registrada: {cantidad} unidades de {producto['nombre']}")
 
-# Producto más vendido
+# Producto más vendido:
 def producto_mas_vendido():
     if len(Productos) == 0:
         print("\nNo hay productos registrados.")
@@ -117,7 +119,7 @@ def producto_mas_vendido():
         print(f"Unidades vendidas: {mas_vendido['vendido']}")
         print(f"Ingresos: {mas_vendido['vendido'] * mas_vendido['precio']}")
 
-# Reporte final
+# Reporte final:
 def reporte_final():
     if len(Productos) == 0:
         print("\nNo hay productos registrados. No se puede generar reporte final")
