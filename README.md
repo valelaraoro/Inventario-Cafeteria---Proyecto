@@ -7,6 +7,7 @@ Senior: Valentina Lara
 Mid: Ventura Orozco / Abel Peña
 Junior: Oralia Martínez / Sebastián Carreón
 # instalacion y ejecucion
-instalacion: como instalar en un computador o dispositivo compatible y definir como funciona 
+instalacion: 
+el programa requeria de un programa: windows a partir de la version 8, linux o mac el cual se podra descargar y ejecutar adecaudamente, de igual manera requerira de una plataforma que este conjunta al Tecmilenio y sus variantes.
 ejecucion:
 
